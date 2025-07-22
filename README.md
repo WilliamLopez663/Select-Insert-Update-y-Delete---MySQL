@@ -55,13 +55,35 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-columnas-alias.PNG">
 </p>
 
+- Uso de la clausula `WHERE` para traer información filtrada:  
+  `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city where CountryCode = "ARG";`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/clausula-where.PNG">
+</p>
 
+- Filtros compuestos usando `WHERE` y `AND`:  
+  `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city where CountryCode = "ARG" AND population > 400000;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-where-and.PNG">
+</p>
 
+- Filtros compuestos usando `WHERE` y `OR`:  
+  `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city where CountryCode = "ECU" OR CountryCode = "AFG";`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-where-or.PNG">
+</p>
 
+- Filtros compuestos usando `WHERE` y `NOT`:  
+  `SELECT Name, Population FROM country WHERE NOT Population < 100000000;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-where-not.PNG">
+</p>
 
-
-
-
+- Ordenando usando `ORDER BY`:  
+  `SELECT Name, Population FROM country order by population desc;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-orderby.PNG">
+</p>
 
 
 
