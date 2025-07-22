@@ -31,3 +31,37 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 </p>
 
 ## Select
+- Uso de la función select para traer todos los datos de una tabla:  
+  `SELECT * from city;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-toda-la-tabla.PNG">
+</p>
+
+- Uso de la función select para traer una columna específica:
+  `SELECT name from city;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-columna-especifica.PNG">
+</p>
+
+- Uso de la función select para traer una columna específica pero indicandole un alias:
+  `SELECT name AS Nombre from city;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-columna-especifica-alias.PNG">
+</p>
+
+- Uso de la función select para traer varias columnas e indicale el alias a cada columna:
+  `SELECT name AS Nombre, district AS Distrito, population AS Población FROM city;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-columnas-alias.PNG">
+</p>
+
+
+
+
+
+
+
+
+
+
+
