@@ -29,6 +29,7 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/prueba2-import.PNG">
 </p>
+<br><br>
 
 ## Select
 - Traer todos los datos de una tabla:  
@@ -36,54 +37,71 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-toda-la-tabla.PNG">
 </p>
+<br>
 
 - Traer una columna específica:  
   `SELECT name from city;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-columna-especifica.PNG">
 </p>
+<br>
 
 - Traer una columna específica pero indicandole un alias:  
   `SELECT name AS Nombre from city;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-columna-especifica-alias.PNG">
 </p>
+<br>
 
 - Traer varias columnas e indicandole un alias a cada columna:  
   `SELECT name AS Nombre, district AS Distrito, population AS Población FROM city;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-columnas-alias.PNG">
 </p>
+<br>
 
 - Uso de la clausula `WHERE` para traer información filtrada:  
   `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city where CountryCode = "ARG";`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/clausula-where.PNG">
 </p>
+<br>
 
 - Filtros compuestos usando `WHERE` y `AND`:  
   `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city where CountryCode = "ARG" AND population > 400000;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-where-and.PNG">
 </p>
+<br>
 
 - Filtros compuestos usando `WHERE` y `OR`:  
   `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city where CountryCode = "ECU" OR CountryCode = "AFG";`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-where-or.PNG">
 </p>
+<br>
 
 - Filtros compuestos usando `WHERE` y `NOT`:  
   `SELECT Name, Population FROM country WHERE NOT Population < 100000000;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-where-not.PNG">
 </p>
+<br>
 
 - Ordenando usando `ORDER BY`:  
   `SELECT Name, Population FROM country order by population desc;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-orderby.PNG">
 </p>
+<br>
+
+
+- Quitando duplicados usando  `DISTINC`:  
+  `SELECT distinct countrycode FROM city;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-distinct.PNG">
+</p>
+<br>
 
 
 
