@@ -138,11 +138,37 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 </p>
 <br>
 
-- Agrupando cohn la función `GROUP BY`:   
+- Agrupando con `GROUP BY`:   
   `SELECT SUM(Population) FROM country group by CONTINENT;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-groupby.PNG">
 </p>
 <br>
+
+- Filtrando funciones agregadas con `HAVING`:   
+  `SELECT continent, count(*) as Paises FROM country group by CONTINENT HAVING COUNT(*) > 5;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-having.PNG">
+</p>
+<br>
+
+- Subconsultas:   
+  `SELECT name as Nombre, population as poblacion FROM country where population > ( select avg(population) from country);`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/subconsultas-select.PNG">
+</p>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
