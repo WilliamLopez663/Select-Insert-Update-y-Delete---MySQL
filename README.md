@@ -159,16 +159,42 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 </p>
 <br>
 
+- Uniendo consulatas con `INNER JOIN`:   
+  `select * from city ci inner join country co on ci.name = co.name;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-inner-join.PNG">
+</p>
+<br>
 
+- Consulatas utilizando `CASE`:   
+`select name as Pais, population as Población, case`  
+`when population > 100000000 then 'Población Alta'`  
+`when population between 10000000 and 100000000 then 'Población Media'`  
+`when population < 10000000 then 'Población baja'`  
+`end as Nivel_de_Poblacion from country;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-case.PNG">
+</p>
+<br>
 
+- Limitando la cantidad de filas con `LIMIT`:   
+  `select name as País, population as Población from country order by population desc limit 10;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-limit.PNG">
+</p>
+<br>
 
+- Uniendo columnas de diferentes tablas con `UNION`:   
+  `select name as País from country  union select countrycode as code from city;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-union.PNG">
+</p>
+<br>
 
-
-
-
-
-
-
-
-
+- Pasando a mayúsculas con `UPPER`:   
+  `select upper(name) as País from country;`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-upper.PNG">
+</p>
+<br>
 
