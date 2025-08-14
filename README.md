@@ -111,7 +111,7 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <br>
 
 - Filtrando por conjunto `IN`:   
-  `SELECT * FROM country WHERE continent in ('north america', 'south america');`  
+  `SELECT * FROM country WHERE continent IN ('north america', 'south america');`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-in.PNG">
 </p>
@@ -153,32 +153,32 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <br>
 
 - Subconsultas:   
-  `SELECT name as Nombre, population as poblacion FROM country where population > ( select avg(population) from country);`  
+  `SELECT name AS Nombre, population AS poblacion FROM country WHERE population > (SELECT AVG(population) FROM country);`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/subconsultas-select.PNG">
 </p>
 <br>
 
 - Uniendo consulatas con `INNER JOIN`:   
-  `select * from city ci inner join country co on ci.name = co.name;`  
+  `SELECT * FROM city ci INNER JOIN country co ON ci.name = co.name;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-inner-join.PNG">
 </p>
 <br>
 
 - Consulatas utilizando `CASE`:   
-`select name as Pais, population as Población, case`  
-`when population > 100000000 then 'Población Alta'`  
-`when population between 10000000 and 100000000 then 'Población Media'`  
-`when population < 10000000 then 'Población baja'`  
-`end as Nivel_de_Poblacion from country;`  
+`SELECT name AS Pais, population AS Población, CASE`  
+`WHEN population > 100000000 THEN 'Población Alta'`  
+`WHEN population BETWEEN 10000000 AND 100000000 THEN 'Población Media'`  
+`WHEN population < 10000000 THEN 'Población baja'`  
+`END AS Nivel_de_Poblacion FROM country;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-case.PNG">
 </p>
 <br>
 
 - Limitando la cantidad de filas con `LIMIT`:   
-  `select name as País, population as Población from country order by population desc limit 10;`  
+  `SELECT name AS País, population AS Población FROM country ORDER BY population DESC LIMIT 10;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-limit.PNG">
 </p>
@@ -192,7 +192,7 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <br>
 
 - Pasando a mayúsculas con `UPPER`:   
-  `SELECT upper(name) AS País FROM country;`  
+  `SELECT UPPER(name) AS País FROM country;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-upper.PNG">
 </p>
