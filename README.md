@@ -111,42 +111,42 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <br>
 
 - Filtrando por conjunto `IN`:   
-  `SELECT * FROM country where continent in ('north america', 'south america');`  
+  `SELECT * FROM country WHERE continent in ('north america', 'south america');`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-in.PNG">
 </p>
 <br>
 
 - Filtrando rangos `BETWEEN`:   
-  `SELECT * FROM country where population between 15000000 and 20000000;`  
+  `SELECT * FROM country WHERE population BETWEEN 15000000 AND 20000000;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-between.PNG">
 </p>
 <br>
 
 - Seleccionando nulos `IS NULL`:   
-  `SELECT * FROM country where capital is null;`  
+  `SELECT * FROM country WHERE capital IS null;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-is-null.PNG">
 </p>
 <br>
 
 - Seleccionando con funciones agregadas `COUNT, AVG, MAX`:   
-  `SELECT max(population) FROM country;;`  
+  `SELECT MAX(population) FROM country;;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-max.PNG">
 </p>
 <br>
 
 - Agrupando con `GROUP BY`:   
-  `SELECT SUM(Population) FROM country group by CONTINENT;`  
+  `SELECT SUM(Population) FROM country GROUP BY continent;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-groupby.PNG">
 </p>
 <br>
 
 - Filtrando funciones agregadas con `HAVING`:   
-  `SELECT continent, count(*) as Paises FROM country group by CONTINENT HAVING COUNT(*) > 5;`  
+  `SELECT continent, COUNT(*) AS Paises FROM country GROUP BY continent HAVING COUNT(*) > 5;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-having.PNG">
 </p>
