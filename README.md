@@ -132,7 +132,7 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <br>
 
 - Seleccionando con funciones agregadas `COUNT, AVG, MAX`:   
-  `SELECT MAX(population) FROM country;;`  
+  `SELECT MAX(population) FROM country;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-max.PNG">
 </p>
