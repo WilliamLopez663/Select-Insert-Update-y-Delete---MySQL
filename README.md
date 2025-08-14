@@ -185,14 +185,14 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <br>
 
 - Uniendo columnas de diferentes tablas con `UNION`:   
-  `select name as País from country  union select countrycode as code from city;`  
+  `SELECT name AS País FROM country UNION SELECT countrycode AS code FROM city;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-union.PNG">
 </p>
 <br>
 
 - Pasando a mayúsculas con `UPPER`:   
-  `select upper(name) as País from country;`  
+  `SELECT upper(name) AS País FROM country;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-upper.PNG">
 </p>
