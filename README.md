@@ -61,21 +61,21 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <br>
 
 - Uso de la clausula `WHERE` para traer información filtrada:  
-  `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city where CountryCode = "ARG";`  
+  `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city WHERE CountryCode = "ARG";`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/clausula-where.PNG">
 </p>
 <br>
 
 - Filtros compuestos usando `WHERE` y `AND`:  
-  `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city where CountryCode = "ARG" AND population > 400000;`  
+  `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city WHERE CountryCode = "ARG" AND population > 400000;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-where-and.PNG">
 </p>
 <br>
 
 - Filtros compuestos usando `WHERE` y `OR`:  
-  `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city where CountryCode = "ECU" OR CountryCode = "AFG";`  
+  `SELECT name AS Nombre, CountryCode AS Código, population AS Población FROM city WHERE CountryCode = "ECU" OR CountryCode = "AFG";`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-where-or.PNG">
 </p>
@@ -89,22 +89,22 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <br>
 
 - Ordenando usando `ORDER BY`:  
-  `SELECT Name, Population FROM country order by population desc;`  
+  `SELECT Name, Population FROM country ORDER BY population DESC;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-orderby.PNG">
 </p>
 <br>
 
 
-- Quitando duplicados usando  `DISTINC`:  
-  `SELECT distinct countrycode FROM city;`  
+- Quitando duplicados usando  `DISTINCT`:  
+  `SELECT DISTINCT countrycode FROM city;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-distinct.PNG">
 </p>
 <br>
 
 - Buscando similares o que contengan ciertos caracteres con `LIKE`:  
-  `SELECT * FROM country where name like '%stan';`  
+  `SELECT * FROM country WHERE name LIKE '%stan';`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-like.PNG">
 </p>
