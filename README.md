@@ -33,21 +33,21 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 
 ## Select
 - Traer todos los datos de una tabla:  
-  `SELECT * from city;`  
+  `SELECT * FROM city;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-toda-la-tabla.PNG">
 </p>
 <br>
 
 - Traer una columna específica:  
-  `SELECT name from city;`  
+  `SELECT name FROM city;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-columna-especifica.PNG">
 </p>
 <br>
 
 - Traer una columna específica pero indicandole un alias:  
-  `SELECT name AS Nombre from city;`  
+  `SELECT name AS Nombre FROM city;`  
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-columna-especifica-alias.PNG">
 </p>
