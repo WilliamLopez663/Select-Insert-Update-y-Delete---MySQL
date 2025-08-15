@@ -215,6 +215,8 @@ Utilizo el comando SELECT para ver el resultado en mi tabla:
 <br>
 
 
-inser-into-select.PNG
+
+
+
 <br>
 
