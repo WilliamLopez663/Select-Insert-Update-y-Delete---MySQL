@@ -196,5 +196,25 @@ En este repositorio realizaré pruebas haciendo uso de las funciones Select, Ins
 <p align="center">
 	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/select-upper.PNG">
 </p>
+<br><br>
+
+## Insert
+
+- Insertando una fila con  `INSERT INTO` `VALUES`:   
+  `INSERT INTO city (ID, Name, CountryCode, District, Population)`
+  `VALUES (4080, 'Suba', 'COL', 'Bogota', 1218513)`  
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/insert-into.PNG">
+</p>
+<br>
+
+Utilizo el comando SELECT para ver el resultado en mi tabla:
+<p align="center">
+	<img src="https://raw.githubusercontent.com/WilliamLopez663/Select-Insert-Update-y-Delete---MySQL/main/assets/images/insert-into-select.PNG">
+</p>
+<br>
+
+
+inser-into-select.PNG
 <br>
 
